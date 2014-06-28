@@ -33,3 +33,6 @@ let iter t ~f =
   Map.Poly.iter
     t.counter
     ~f:f
+
+(* 'a Histogram.t -> ('a, int) list *)
+let to_alist t = Map.Poly.to_alist t.counter

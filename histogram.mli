@@ -8,3 +8,4 @@ val find      : 'a t -> 'a -> int option
 val touch     : 'a t -> 'a -> 'a t
 val touch_all : 'a t -> 'a list -> 'a t
 val iter      : 'a t -> f:(key:'a -> data:int -> unit) -> unit
+val to_alist  : 'a t -> ('a * int) list

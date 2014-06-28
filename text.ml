@@ -8,7 +8,6 @@ let readlines filename =
       ~f:(fun () -> In_channel.input_lines file)
       ~finally:(fun () -> In_channel.close file) in
   lines
-
     
 (* string list -> (string list) list *)
 let split_lines lines =
