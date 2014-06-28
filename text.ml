@@ -25,3 +25,4 @@ let word_hist filename =
       ~init:Histogram.empty
       ~f:(fun acc_hist words -> Histogram.touch_all acc_hist words) in
   hist
+

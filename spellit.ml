@@ -1,3 +1,6 @@
+(* A simple spelling corrector in OCaml. You provide a malformed word, SpellIt
+   will propose a likely correction. *)
+
 open Core.Std
 
 let () =

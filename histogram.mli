@@ -1,3 +1,6 @@
+(* Histograms track counts of things -- counds of words, object references, or
+   whatever else strikes your fancy. *)
+
 open Core.Std
 
 type 'a t

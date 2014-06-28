@@ -1,3 +1,6 @@
+(* Operations on text -- IO, text munging, simple string transformations, and so
+   on*)
+
 open Core.Std
 
 val readlines : string -> string list
