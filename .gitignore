@@ -1,0 +1,6 @@
+*.cmi
+*.cmx
+*.cma
+*.native
+*.byte
+_build/
