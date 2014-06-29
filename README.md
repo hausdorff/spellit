@@ -2,9 +2,9 @@
 
 spellit will take a malformed word and suggest a likely spelling correction. We do this by following two simple (naive) steps:
 
-1. Tally up the number of word occur in a very large document
-2. Generate a list of possible words that are close to the misspelled word
-3. Choose the candidate word that occurred most frequently in the corpus
+1. tally up the number of times each word occur in a large corpus of English text
+2. generate a list of possible words that are close to the misspelled word
+3. from these candidate words, choose the one that occurred most frequently in the corpus
 
 Hopefully we have a corpus that's a representative sample of how people misspell! Ha ha! (Hint: we don't.)
 
