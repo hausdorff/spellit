@@ -4,12 +4,9 @@
 open Core.Std
 
 let () =
-  let hist = Text.word_hist "data/corpus.txt" in
-  let sorted_words =
-    List.sort
-      (Histogram.to_alist hist)
-      ~cmp:(fun w1 w2 -> (snd w2) - (snd w1)) in
-  List.iter
-    (List.take sorted_words 10)
-    ~f:(fun datum -> printf "%s %d\n" (fst datum) (snd datum))
+  Text.word_hist "../data/corpus.txt"
+  |> Histogram.to_alist
+  |> List.sort ~cmp:(fun w1 w2 -> (snd w2) - (snd w1))
+  |> Fn.flip List.take 10
+  |> List.iter ~f:(fun datum -> printf "%s %d\n" (fst datum) (snd datum))
   
