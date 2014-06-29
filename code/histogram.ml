@@ -36,3 +36,8 @@ let iter t ~f =
 
 (* 'a Histogram.t -> ('a, int) list *)
 let to_alist t = Map.Poly.to_alist t.counter
+
+(* 'a Histogram.t -> 'a -> bool *)
+let contains t k = match find t k with
+    None   -> false
+  | Some _ -> true

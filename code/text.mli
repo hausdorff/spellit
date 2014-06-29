@@ -8,3 +8,5 @@ val readlines : string -> string list
 
 (* Generates a histogram of word occurrences from some file *)
 val word_hist : string -> string Histogram.t
+
+val suggest : string Histogram.t -> string -> string option

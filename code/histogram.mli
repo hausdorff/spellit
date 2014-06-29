@@ -26,3 +26,6 @@ val iter      : 'a t -> f:(key:'a -> data:int -> unit) -> unit
 
 (* Convert the Histogram.t to a list *)
 val to_alist  : 'a t -> ('a * int) list
+
+(* Check to see if a key is in histogram *)
+val contains  : 'a t -> 'a -> bool
