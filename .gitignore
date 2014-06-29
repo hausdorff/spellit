@@ -3,4 +3,4 @@
 *.cma
 *.native
 *.byte
-_build/
+code/_build/

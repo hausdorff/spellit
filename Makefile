@@ -1,6 +1,7 @@
-all: spellit.ml
-	corebuild spellit.native
+MAKE=make
+
+all:
+	$(MAKE) -C code all
 
 clean:
-	rm -rf _build
-	rm *.cmo *.cmi *.native *.byte
+	$(MAKE) -C code clean

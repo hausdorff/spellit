@@ -4,7 +4,7 @@
 open Core.Std
 
 let () =
-  let hist = Text.word_hist "corpus.txt" in
+  let hist = Text.word_hist "data/corpus.txt" in
   let sorted_words =
     List.sort
       (Histogram.to_alist hist)
